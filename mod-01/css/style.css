@@ -61,6 +61,7 @@ body {
 
 .text-light { color: white; }
 .text-light a { color: white; }
+
 .text-dark { color: black; }
 .text-dark a { color: black; }
 
@@ -162,6 +163,18 @@ body {
 }
 
 .social a:hover{ transform: scale(1.2); }
+
+.border-light { border-color: white; }
+
+.border-dark { border-color: black; }
+
+.border-top { border-top: 1px solid; }
+
+.border-bottom { border-bottom: 1px solid; }
+
+.border-left { border-left: 1px solid white; }
+
+.border-right { border-right: 1px solid white; }
 
 .footer {
     display: flex;
