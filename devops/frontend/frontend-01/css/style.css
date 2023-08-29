@@ -60,9 +60,11 @@ body {
 }
 
 .text-light { color: white; }
+
 .text-light a { color: white; }
 
 .text-dark { color: black; }
+
 .text-dark a { color: black; }
 
 .btn-primary {
@@ -79,7 +81,7 @@ body {
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    padding: 8px 30px;
+    padding: 12px 90px;
 }
 
 .brand {
