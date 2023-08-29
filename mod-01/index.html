@@ -9,15 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="container-fluid bg-image">
-        <header class="navbar bg-transparent text-light">
-            <a href="#" class="brand">SYSTEKNA</a>    
+
+    <!-- #region 'CAPA' -->
+    <main class="container-fluid bg-image" id="INICIO">
+        <header class="navbar bg-transparent">
+            <a href="#" class="brand text-brand">SYSTEKNA</a>    
             <nav class="nav">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">SERVIÇOS</a></li>
-                    <li><a href="#">SOBRE</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="#INICIO" class="active">INICIO</a></li>
+                    <li><a href="#SERVIÇO">SERVIÇOS</a></li>
+                    <li><a href="#SOBRE">SOBRE</a></li>
+                    <li><a href="#CONTATO">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,5 +41,38 @@
             </div>
         </footer>
     </main>
+    <!-- #endregion -->
+
+    <!-- #region 'SERVIÇO' -->
+    <section class="container-fluid text-dark" id="SERVIÇO">
+        <header>
+            <h2>SERVIÇOS</h2>
+        </header>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region 'SOBRE' -->
+    <section class="container-fluid text-dark" id="SOBRE">
+        <header>
+            <h2>SOBRE</h2>
+        </header>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region 'CONTATO' -->
+    <section class="container-fluid bg-dark text-light" id="CONTATO">
+        <header>
+            <h2>CONTATO</h2>
+        </header>
+        <section class="container min-vh-100">
+        </section>
+        <footer class="footer bg-transparent">
+            <div>
+                <p>copyright &copy; systekna.com - 2023</p>
+            </div>
+        </footer>
+    </section>
+    <!-- #endregion -->
+
 </body>
 </html>
