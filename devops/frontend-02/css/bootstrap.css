@@ -23,16 +23,13 @@ body {
 }
 
 .container { 
-    margin: 0;
     padding: 0;
-    background-color: pink;
     margin: 0 50px;
 }
 
 .container-fluid { 
     margin: 0;
     padding: 0;
-    min-width: 100vh;
 }
 
 .d-flex { display: flex; }
@@ -100,7 +97,7 @@ body {
 .text-light { color: white; }
 .text-light a { color: white; }
 
-.btn-primary {
+.btn-light {
     background-color: white;
     color: #010124;
     border-radius: 25px;
