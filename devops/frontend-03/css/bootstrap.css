@@ -118,8 +118,6 @@ body {
     border-radius: 25px;
 }
 
-
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -259,7 +257,4 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.footer {
 }
