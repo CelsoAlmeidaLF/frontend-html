@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-/* DEFINIR DEFAULT HTML */
-
-/* DEFINIR DEFAULT TAGS HTML 5 (SECTION, NAV, ASIDE, FOOTER ....) */
-
 body {
     margin: 0;
     padding: 0;
@@ -118,7 +114,39 @@ body {
     border-radius: 25px;
 }
 
+.btn-acima {
+    position: fixed;
+    bottom: 10%;
+    right: 2em;
+    color: white;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(15px);  
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    transition: all .3s ease;
+}
 
+.btn-acima a i {
+    color: #eee;
+    font-size: 2.8em;
+}
+
+.btn-acima:hover {
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(15px);  
+    border: 1px solid rgba(250, 250, 250, 0.12);
+}
+
+.btn-acima:hover {
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(15px);  
+    border: 1px solid rgba(25, 25, 25, 0.8);
+}
 
 .navbar {
     display: flex;
@@ -157,7 +185,9 @@ body {
     transition: all .55s ease;
 }
 
-.navlist a:hover { border-bottom: 2px solid  white; }
+.navbar .active, 
+.navlist a:hover
+ { border-bottom: 2px solid  white; }
 
 .card {
     max-width: 800px;
@@ -247,7 +277,9 @@ body {
 
 .min-vw-100 { min-width: 100vw; }
 
-.fixed-top {
+.fixed-top
+ {
+    transition: all .4s ease;
     position: fixed;
     top: 0;
     left: 0;
@@ -259,7 +291,4 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.footer {
 }
