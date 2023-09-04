@@ -1,0 +1,298 @@
+/*!
+ * Bootstrap[Systekna] v1.0.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@100;200&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&family=Shrikhand&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    color: #212529;
+    background-color: #fff;
+    text-align: left;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.container { 
+    margin: 0;
+    padding: 0;
+    margin: 0 50px;
+    min-height: 1em;
+}
+
+.container-fluid { 
+    margin: 0;
+    padding: 0;
+    min-width: 100vh;
+    min-height: 1em;
+}
+
+.d-flex { display: flex; }
+
+.d-block { display: block; }
+
+.flex-column { flex-direction: column; }
+
+.flex-row { flex-direction: row; }
+
+.flex-fill { flex: 1 1 auto; }
+
+.justify-content-center { justify-content: center; }
+
+.justify-content-start { justify-content: start; }
+
+.justify-content-end { justify-content: end; }
+
+.justify-content-between { justify-content: space-between; }
+
+.align-content-center { align-items: center; }
+
+.align-content-start { align-items: start; }
+
+.align-content-end { align-items: end; }
+
+.justify-self-start { justify-self: start; }
+
+.justify-self-center { justify-self: center; }
+
+.justify-self-end { justify-self: end; }
+
+.align-items-center { align-self: center; }
+
+.align-items-start { align-self: start; }
+
+.align-items-end { align-self: end; }
+
+.bg-image {
+    background: url(fundo.jpg) no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-dark {
+    background-color: #010124;
+    color: white;
+}
+
+.bg-light {
+    background-color: #f1d5e9;
+    color: white;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    color: white;
+}
+
+.bg-gross {
+    background: transparent;
+    backdrop-filter: blur(15px);  
+}
+
+.text-light { color: white; }
+
+.text-light a { color: white; }
+
+.text-dark { color: #010124; }
+
+.text-dark a { color: #010124; }
+
+.btn-light {
+    background-color: white;
+    color: #010124;
+    border-radius: 25px;
+}
+
+.btn-dark {
+    background-color: #010124;
+    color: white;
+    border-radius: 25px;
+}
+
+.btn-acima {
+    position: fixed;
+    bottom: 10%;
+    right: 2em;
+    color: white;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(15px);  
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    transition: all .3s ease;
+}
+
+.btn-acima a i {
+    color: #eee;
+    font-size: 2.8em;
+}
+
+.btn-acima:hover {
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(15px);  
+    border: 1px solid rgba(250, 250, 250, 0.12);
+}
+
+.btn-acima:hover {
+    background: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(15px);  
+    border: 1px solid rgba(25, 25, 25, 0.8);
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 12px 40px;
+}
+
+.navbar-brand {
+    justify-self: center;
+    align-self: center;
+    padding: 0 20px;
+    font-size: 2.1em;
+    color: goldenrod;
+    font-family: 'Monoton', 'sans-serif';
+}
+
+.navlist { 
+    justify-self: center;
+    align-self: center;
+}
+
+.navlist ul {
+    display: flex;
+    justify-content: space-between;  
+    gap: 20px;
+}
+
+.navlist ul li { list-style-type: none; }
+
+.navlist a {
+    font-size: 1.1em;
+    border-bottom: 2px solid transparent;   
+    color: white;
+    transition: all .55s ease;
+}
+
+.navbar .active, 
+.navlist a:hover
+ { border-bottom: 2px solid  white; }
+
+.card {
+    max-width: 800px;
+    margin: 9px 1px;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(250, 250, 250, 0.12);
+    border-radius: 23px;
+}
+
+.card h2 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+.card p { margin-bottom: 1.8em; }
+
+.card .btn {
+    font-size: 1.6em;
+    padding: 2px 20px;
+    margin: 80px 0;
+    color: #010124;
+}
+
+.card a { color: white; }
+.card ul li { list-style-type: none; }
+.social { margin: 2em 0; }
+
+.social ul {
+    display: flex;
+    justify-content: space-between;  
+    gap: 20px;
+}
+
+.social a { 
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.border { border: 1px solid rgba(250, 250, 250, 0.12); }
+
+.border-top { border-top: 1px solid rgba(250, 250, 250, 0.12); }
+
+.border-left { border-left: 1px solid rgba(250, 250, 250, 0.12); }
+
+.border-right { border-right: 1px solid rgba(250, 250, 250, 0.12); }
+
+.border-bottom{ border-bottom: 1px solid rgba(250, 250, 250, 0.12); }
+
+.social a:hover{ transform: scale(1.2); }
+
+.m-1 { margin: 0.2em; }
+
+.my-1 { margin: 0.2em 0; }
+
+.mx-1 { margin: 0 0.2em; }
+
+.p-1 { padding: 0.2em; }
+
+.py-1 { padding: 0.2em 0; }
+
+.px-1 { padding: 0 0.2em; }
+
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.vh-12 { min-height: 12vh; }
+
+.vh-24 { min-height: 24vh; }
+
+.vh-32 { min-height: 32vh; }
+
+.vh-42 { min-height: 42vh; }
+
+.vh-64 { min-height: 64vh; }
+
+.min-vh-100 { min-height: 100vh }
+
+.min-vw-100 { min-width: 100vw; }
+
+.fixed-top
+ {
+    transition: all .4s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
