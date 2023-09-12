@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@100;200&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&family=Shrikhand&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    color: #212529;
+    background-color: #fff;
+    text-align: left;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    z-index: -1000;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+}
+
+header,
+footer
+{
+    position: absolute;
+    color: #fff;
+    background-color: rgba(250,250, 250, 0.1);
+    width: 100%;
+    min-height: 1em;
+}
+
+header {
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bg-dark {
+    color: #fff;
+    background-color: #212529;
+}
+
+.bg-light {
+    color: #212529;
+    background-color: #fff; 
+}
+
+
+.bg-image {
+    color: #fff;
+    background: url(../img/fundo_2.jpg) no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-gross {
+    background: rgba(25,25, 25, 0.3);
+    backdrop-filter: blur(15px);  
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    padding: 8px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: goldenrod;
+    font-size: 2.8em;
+    font-family: 'Monoton';
+}
+
+.card {
+    max-width: 60%;
+    min-height: 20vh;
+    margin: 12px;
+    padding: 12px 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(250,250, 250, 0.1);
+}
+
+.card h2, p {
+    margin: 24px 0;
+}
+
+.card h2 {
+    font-size: 3.1em;
+}
+
+.btn-light {
+    margin: 32px 0;
+    padding: 9px 18px;
+    color: #212529;
+    background-color: #fff; 
+    border-radius: 25px;
+}
+
+.social { 
+    margin: 24px 0;
+    font-size: 1.8em;
+}
+
+.social a { 
+    color: #fff;
+}
