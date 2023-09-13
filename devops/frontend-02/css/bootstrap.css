@@ -91,6 +91,7 @@ body {
 
 .bg-gross {
     background: transparent;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(15px);  
 }
 
