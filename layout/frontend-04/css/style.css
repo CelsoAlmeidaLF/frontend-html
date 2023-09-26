@@ -1,0 +1,107 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    margin: 1px;
+    padding: 1px;
+    background-color: #faf;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    margin: 1px;
+    padding: 1px;
+    background-color: #faf;
+}
+
+.navbar .navbar-brand {
+    min-width: 200px;
+    min-height: 32px;
+    margin: 2px;
+    padding: 2px 8px; 
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlist {
+    margin: 2px;
+    padding: 2px;
+    background-color: aqua;
+    display: flex;
+    direction: row;
+    justify-content:space-between;
+}
+
+.navlink {
+    margin: 2px;
+    padding: 2px 8px;
+    background-color: #ffa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+.container {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffa;
+    min-height: 1vh;
+}
+
+.row {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #eee;
+    min-height: 1em;
+}
+
+.col-3 {
+    margin: 2px;
+    padding: 1px;
+    width: 24%;
+    background-color: #ef4;
+}
+
+.col-6 {
+    margin: 2px;
+    padding: 1px;
+    width: 50%;
+    background-color: #ef4;
+}
+
+.col-12 {
+    margin: 2px;
+    padding: 1px;
+    width: 100%;
+    background-color: #ef4;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
