@@ -1,3 +1,5 @@
+/* version 1.0 */
+
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@100;200&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&family=Shrikhand&display=swap');
 
@@ -11,7 +13,6 @@ body {
     padding: 0;
     min-width: 100%;
     min-height: 100%;
-    position: absolute;
     color: #212529;
     background-color: #fff;
     text-align: left;
@@ -23,48 +24,56 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    min-height: 100vh;
-    margin: 0;
     padding: 0;
-    z-index: 0;
+    margin: 0;
+    width: 100%;
+    z-index: -1000;
+}
+
+section {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
 }
 
 header,
-footer { 
+footer
+{
     position: absolute;
-    color: #fff;
-    background-color: rgba(12, 12, 12, 0.2);
-    z-index: 0;
+    width: 100%;
+    min-height: 1em;
 }
 
 header {
+    padding: 0 42px;
+    z-index: 0;
     top: 0;
     left: 0;
     right: 0;
 }
 
 footer {
+    z-index: 1;
     bottom: 0;
     left: 0;
     right: 0;
 }
 
-section {
-    position: relative;
-    z-index: -100;
-}
-
 .container { 
+    position: relative;
     margin: 0;
     padding: 0;
-    margin: 0;
+    margin: 0 50px;
     min-height: 1em;
 }
 
 .container-fluid { 
+    position: relative;
     margin: 0;
     padding: 0;
-    width: 100%;
+    min-width: 100vh;
     min-height: 1em;
 }
 
@@ -86,7 +95,8 @@ section {
 
 .justify-content-between { justify-content: space-between; }
 
-.align-content-center { align-items: center; }
+.align-content-center
+,.align-items-center { align-items: center; }
 
 .align-content-start { align-items: start; }
 
@@ -104,117 +114,47 @@ section {
 
 .align-items-end { align-self: end; }
 
+.bg-dark {
+    color: #fff;
+    background-color: #212529;
+}
+
+.bg-light {
+    color: #212529;
+    background-color: #fff; 
+}
+
 .bg-image {
-    background: url(fundo.jpeg) no-repeat; 
+    color: #fff;
+    background: url(../img/background.jpg) no-repeat; 
     background-position: center;
     background-size: cover;
 }
 
-.bg-dark {
-    background-color: #010124;
-    color: white;
-}
-
-.bg-dark-transparent {
-    background-color:  rgba(25, 25, 28, 0.9);
-    color: white;
-}
-
-.bg-dark-gradient {
-    background: rgb(2,0,36);
-    background: linear-gradient(6deg, rgba(2,0,36,1) 0%, rgba(41,2,67,1) 41%, rgba(5,0,38,1) 100%);
-}
-
-.bg-light {
-    background-color: #f1d5e9;
-    color: black;
-}
-
-.bg-transparent {
-    background-color: transparent;
-    color: white;
-}
-
 .bg-gross {
-    background: transparent;
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(25,25, 25, 0.3);
     backdrop-filter: blur(15px);  
 }
 
-.text-light { color: white; }
-
-.text-light a { color: white; }
-
-.text-dark { color: #010124; }
-
-.text-dark a { color: #010124; }
-
-.btn-light {
-    background-color: white;
-    color: #010124;
-    border-radius: 25px;
-}
-
-.btn-dark {
-    background-color: #010124;
-    color: white;
-    border-radius: 25px;
-}
-
-.btn-acima {
-    position: fixed;
-    bottom: 10%;
-    right: 3%;
-    color: white;
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(15px);  
-    border: 1px solid rgba(200, 200, 200, 0.8);
-    transition: all .3s ease;
-    z-index: 1000;
 }
 
-.btn-acima a i {
-    color: #eee;
-    font-size: 2.8em;
-}
-
-.btn-acima:hover {
-    background: rgba(50, 50, 50, 0.2);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(15px);  
-    border: 1px solid rgba(250, 250, 250, 0.12);
-}
-
-.btn-acima:hover {
-    background: rgba(50, 50, 50, 0.2);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(15px);  
-    border: 1px solid rgba(25, 25, 25, 0.8);
-}
-
-.navbar {
+.navbar{
+    padding: 8px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    justify-items: center;
-    padding: 12px 40px;
+    align-items: center;
 }
 
 .navbar-brand {
     position: relative;
-    justify-self: center;
-    align-self: center;
-    padding: 0 20px;
-    font-size: 2.1em;
     color: goldenrod;
-    font-family: 'Monoton', 'sans-serif';
+    font-size: 2.8em;
+    font-family: 'Monoton';
 }
 
 .navlist { 
@@ -231,12 +171,14 @@ section {
     padding: 2px 8px;
 }
 
-.navlist ul li { list-style-type: none; }
+.navlist ul li { 
+    padding: 12px;
+    list-style-type: none; 
+}
 
 .navlist a {
     font-size: 1.1em;
     border-bottom: 2px solid transparent;   
-    color: white;
     transition: all .55s ease;
 }
 
@@ -244,7 +186,7 @@ section {
 .navlist a:hover
  { border-bottom: 2px solid  white; }
 
-.row {
+ .row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -314,50 +256,117 @@ section {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
+
 .card {
-    position: relative;
-    max-width: 800px;
-    margin: 9px 1px;
-    padding: 30px;
-    border-radius: 14px;
-    border: 1px solid rgba(250, 250, 250, 0.12);
-    border-radius: 23px;
+    width: 532px;
+    margin: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(250,250, 250, 0.1);
 }
 
-.card h2 {
-    font-size: 3em;
-    margin-bottom: 0.2em;
-}
-
-.card p { margin-bottom: 1.8em; }
-
-.card .btn {
-    font-size: 1.6em;
-    padding: 2px 20px;
-    margin: 80px 0;
-    color: #010124;
-}
-
-.card a { color: white; }
-.card ul li { list-style-type: none; }
-.social { margin: 2em 0; }
-
-.social ul {
+.card-header {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;  
-    gap: 20px;
+    min-height: 64px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(250,250, 250, 0.1);
+}
+
+.card-body p,
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6
+ {
+    padding-left: 32px;
+}
+
+.card-header p,
+.card-header h1, 
+.card-header h2,
+.card-header h3,
+.card-header h4,
+.card-header h5,
+.card-header h6 {
+    margin: 0;
+    padding-left: 32px;
+}
+
+.card-header .btn-close {
+    cursor: pointer;
+    border-top-right-radius: 12px;
+    background: rgba(128,0, 128,0.3);
+    font-size: 1.3em;
+    padding: 1px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body .btn-close {
+    cursor: pointer;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(128,0, 128,0.3);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-close i {
+    font-size: 1.7em;
+}
+
+.card-body {
+    padding: 1px;
+}
+
+
+.btn-light {
+    cursor: pointer;
+    margin: 32px 0;
+    padding: 9px 18px;
+    color: #212529;
+    background-color: #fff; 
+    border-radius: 25px;
+}
+
+.btn-light a
+,.text-dark a {
+    cursor: pointer;
+    color: #212529;
+}
+
+.btn-light:hover
+,.text-dark:hover {
+    cursor: pointer;
+    background-color: rgba(250,250, 250, 0.7);
+}
+
+.btn-dark a
+,.text-light a {
+    cursor: pointer;
+    color: #fff;
+}
+
+.social { 
+    margin: 24px 0;
+    font-size: 1.8em;
 }
 
 .social a { 
-    color: white;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center; 
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    transition: .3s;
+    color: #fff;
 }
 
 .border { border: 1px solid rgba(250, 250, 250, 0.12); }
@@ -388,33 +397,56 @@ section {
 
 .text-center { text-align: center; }
 
-.text-right { text-align: right; }
+.text-right { text-align: right; } 
 
-.vh-12 {  height: 12vh; }
-
-.vh-24 { height: 24vh; }
-
-.vh-32 { height: 32vh; }
-
-.vh-42 { height: 42vh; }
-
-.vh-64 { height: 64vh; }
-
-.min-vh-100 { min-height: 100vh }
-
-.min-vw-100 { min-width: 100vw; }
-
-.fixed-top {
-    transition: all .4s ease;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+.h-auto {
+    height: auto;
 }
 
-.fixed-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.w-auto {
+    width: auto;
 }
+
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+.vh-65 {
+    height: 65vh;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+
+.vh-25{
+    height: 25vh;
+}
+
+
+.vw-100 {
+    width: 100vw;
+}
+
+.vw-65 {
+    width: 65vw;
+}
+
+.vw-75 {
+    width: 75vw;
+}
+
+.vw-50 {
+    width: 50vw;
+}
+
+.vw-25{
+    width: 25vw;
+}
+
