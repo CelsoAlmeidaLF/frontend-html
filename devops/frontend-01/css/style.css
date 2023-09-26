@@ -56,6 +56,7 @@ body {
     border: 1px solid white;
     border-radius: 23px;
     background: transparent;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(15px);  
 }
 
