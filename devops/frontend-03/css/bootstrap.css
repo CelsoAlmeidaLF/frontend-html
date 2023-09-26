@@ -71,7 +71,7 @@ body {
 .align-items-end { align-self: end; }
 
 .bg-image {
-    background: url(fundo.jpg) no-repeat; 
+    background: url(../img/fundo.jpg) no-repeat; 
     background-position: center;
     background-size: cover;
 }
